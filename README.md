@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A collection of things I've built, from small frontend apps to full-stack
+systems. Each folder (or linked repo) has its own README with setup steps.
 
-## Available Scripts
+## Featured
 
-In the project directory, you can run:
+### ⛽ [Fuel Tracker](https://github.com/surya-charan-p/fuel-tracker) · own repo
 
-### `npm start`
+Mobile-first, installable web app (PWA) for logging fill-ups and tracking a
+vehicle's real fuel economy, cost per km and fuel spend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Stack:** React 19, TypeScript, TanStack Query, Tailwind · Python 3.13, FastAPI, SQLAlchemy 2, PostgreSQL 17 · Docker, GitHub Actions
+- **Highlights:** JWT auth with an httpOnly refresh cookie; full-tank economy method with exact decimal maths; frontend types generated from the API's OpenAPI schema; pytest, Vitest and Playwright tests (phone + desktop) in CI
+- **Docs:** architecture, API, design decisions and a roadmap through live fuel prices and AI predictions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![CI](https://github.com/surya-charan-p/fuel-tracker/actions/workflows/ci.yml/badge.svg)](https://github.com/surya-charan-p/fuel-tracker/actions/workflows/ci.yml)
 
-### `npm test`
+## In this repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💳 [Finance Platform](finance-platform/)
 
-### `npm run build`
+Full-stack personal finance and transaction platform: accounts, transfers,
+deposits and withdrawals, filterable transaction history, a dashboard and an
+admin panel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Stack:** Java 17, Spring Boot, Spring Security + JWT, Spring Data JPA, MySQL · React, Vite, React Router, Recharts · Docker Compose, nginx
+- **Highlights:** atomic transfers (money is never "half moved"), BCrypt password hashing, role-based admin features, paginated and filtered queries
+- **Run:** `cd finance-platform && docker compose up --build` → http://localhost:5173
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🧠 [Quiz App](quiz-app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Browser trivia game: answer questions against a countdown timer and climb a
+prize ladder, with sound effects for right and wrong answers.
 
-### `npm run eject`
+- **Stack:** React 18 (Create React App), CSS, `use-sound`
+- **Run:** `cd quiz-app && npm install && npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech at a glance
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| | Fuel Tracker | Finance Platform | Quiz App |
+|---|:-:|:-:|:-:|
+| Frontend | React 19 + TypeScript | React + Vite | React |
+| Backend | FastAPI (Python) | Spring Boot (Java) | — |
+| Database | PostgreSQL | MySQL | — |
+| Auth | JWT + refresh cookie | JWT | — |
+| Containers | Docker Compose | Docker Compose | — |
+| CI / tests | GitHub Actions, pytest, Vitest, Playwright | — | — |

@@ -2,3 +2,8 @@
 node_modules/
 ebin/
 *.beam
+build/
+*.class
+*.aux
+*.log
+*.out

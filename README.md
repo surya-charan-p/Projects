@@ -46,13 +46,23 @@ networks of up to 200 000 nodes.
 - **Highlights:** prefix routing in about log₁₆ N hops (4.27 at 200 000 nodes); every request checked against the true closest node; fault tolerance for node crashes and link failures (99.3 % of requests answered correctly with 40 % of nodes crashed)
 - **Run:** `cd pastry-p2p && ./build.sh && ./project3 1000 10`
 
+### 🧮 [Dynamic Programming](dynamic-programming/)
+
+Two dynamic programming algorithms with full solution extraction: the best
+weighted approximate common substring of two strings (match weights, mismatch
+penalty, no gaps) and the largest all-zero square in a boolean matrix.
+
+- **Stack:** Java (no recursion, flat arrays) · Python + matplotlib for experiments · LaTeX report
+- **Highlights:** Bellman equations with correctness proofs; linear-space variant of the substring DP; square DP stored in one byte per cell, widening to short only when needed; verified against brute force on 3000 random instances; runtime and memory measured up to 1000×1000
+- **Run:** `cd dynamic-programming && python3 run_experiments.py`
+
 ## Tech at a glance
 
-| | Fuel Tracker | Finance Platform | Quiz App | Pastry P2P |
-|---|:-:|:-:|:-:|:-:|
-| Frontend | React 19 + TypeScript | React + Vite | React | None (CLI) |
-| Backend | FastAPI (Python) | Spring Boot (Java) | — | Erlang/OTP actors |
-| Database | PostgreSQL | MySQL | — | Replicated in-memory key/value |
-| Auth | JWT + refresh cookie | JWT | — | None |
-| Containers | Docker Compose | Docker Compose | — | None |
-| CI / tests | GitHub Actions, pytest, Vitest, Playwright | — | — | Built-in routing-correctness check |
+| | Fuel Tracker | Finance Platform | Quiz App | Pastry P2P | Dynamic Programming |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Frontend | React 19 + TypeScript | React + Vite | React | None (CLI) | None (CLI) |
+| Backend | FastAPI (Python) | Spring Boot (Java) | — | Erlang/OTP actors | Java |
+| Database | PostgreSQL | MySQL | — | Replicated in-memory key/value | — |
+| Auth | JWT + refresh cookie | JWT | — | None | — |
+| Containers | Docker Compose | Docker Compose | — | None | — |
+| CI / tests | GitHub Actions, pytest, Vitest, Playwright | — | — | Built-in routing-correctness check | Brute-force cross-checks |

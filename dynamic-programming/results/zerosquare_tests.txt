@@ -1,0 +1,9 @@
+5x6 example: k=3 top-left=(1,2)
+[PASS] hand example finds the 3x3 block
+[PASS] all-ones matrix -> k = 0
+[PASS] 300x400 all-zero -> k = 300 (no byte overflow)
+[PASS] 200x200 all-zero -> k = 200 (byte read as unsigned)
+[PASS] single row / column
+[PASS] 3000 random matrices: full == rolling == brute force, square is all zero
+
+All tests passed

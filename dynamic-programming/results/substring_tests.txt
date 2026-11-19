@@ -1,0 +1,23 @@
+Example (w=1, delta=0.5):
+  score=4.5000  len=6  mismatches=1
+  X[2..7] = BCAABC
+  Y[3..8] = BCAACC
+[PASS] example CAABC/CAACC scores 4 - delta
+[PASS] optimum at least as good as the example
+[PASS] example matches brute force
+Example (scenario 1, w=1, delta=10):
+  score=4.0000  len=4  mismatches=0
+  X[2..5] = BCAA
+  Y[3..6] = BCAA
+[PASS] scenario 1 example: best is exact BCAA (score 4)
+Example (scenario 2, delta=1.0):
+  score=27.7750  len=6  mismatches=1
+  X[4..9] = AABCAA
+  Y[1..6] = ABBCAA
+[PASS] scenario 2 example matches brute force
+[PASS] disjoint alphabets -> single mismatch, score -delta
+[PASS] identical strings -> full match
+[PASS] input validation rejects lowercase
+[PASS] 3000 random instances: full DP == linear DP == brute force, extraction re-scores
+
+All tests passed

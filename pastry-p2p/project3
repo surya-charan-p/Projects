@@ -1,0 +1,5 @@
+#!/bin/sh
+# Usage: ./project3 numNodes numRequests [options]
+DIR="$(cd "$(dirname "$0")" && pwd)"
+[ -f "$DIR/ebin/project3.beam" ] || "$DIR/build.sh" >/dev/null
+exec erl +P 8000000 -noshell -pa "$DIR/ebin" -s project3 start -extra "$@"

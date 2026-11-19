@@ -36,13 +36,23 @@ prize ladder, with sound effects for right and wrong answers.
 - **Stack:** React 18 (Create React App), CSS, `use-sound`
 - **Run:** `cd quiz-app && npm install && npm start`
 
+### 🌐 [Pastry P2P Overlay](pastry-p2p/)
+
+Simulation of the Pastry peer-to-peer protocol (Rowstron & Druschel), with
+one Erlang actor per peer and a replicated key/value store on top. It runs
+networks of up to 200 000 nodes.
+
+- **Stack:** Erlang/OTP (actor model, message passing only)
+- **Highlights:** prefix routing in about log₁₆ N hops (4.27 at 200 000 nodes); every request checked against the true closest node; fault tolerance for node crashes and link failures (99.3 % of requests answered correctly with 40 % of nodes crashed)
+- **Run:** `cd pastry-p2p && ./build.sh && ./project3 1000 10`
+
 ## Tech at a glance
 
-| | Fuel Tracker | Finance Platform | Quiz App |
-|---|:-:|:-:|:-:|
-| Frontend | React 19 + TypeScript | React + Vite | React |
-| Backend | FastAPI (Python) | Spring Boot (Java) | — |
-| Database | PostgreSQL | MySQL | — |
-| Auth | JWT + refresh cookie | JWT | — |
-| Containers | Docker Compose | Docker Compose | — |
-| CI / tests | GitHub Actions, pytest, Vitest, Playwright | — | — |
+| | Fuel Tracker | Finance Platform | Quiz App | Pastry P2P |
+|---|:-:|:-:|:-:|:-:|
+| Frontend | React 19 + TypeScript | React + Vite | React | None (CLI) |
+| Backend | FastAPI (Python) | Spring Boot (Java) | — | Erlang/OTP actors |
+| Database | PostgreSQL | MySQL | — | Replicated in-memory key/value |
+| Auth | JWT + refresh cookie | JWT | — | None |
+| Containers | Docker Compose | Docker Compose | — | None |
+| CI / tests | GitHub Actions, pytest, Vitest, Playwright | — | — | Built-in routing-correctness check |

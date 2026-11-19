@@ -1,0 +1,54 @@
+N=10 trial=1
+Average number of hops: 0.9100
+N=10 trial=2
+Average number of hops: 0.9300
+N=10 trial=3
+Average number of hops: 0.8800
+N=50 trial=1
+Average number of hops: 1.5000
+N=50 trial=2
+Average number of hops: 1.3780
+N=50 trial=3
+Average number of hops: 1.4500
+N=100 trial=1
+Average number of hops: 1.6930
+N=100 trial=2
+Average number of hops: 1.6980
+N=100 trial=3
+Average number of hops: 1.6970
+N=500 trial=1
+Average number of hops: 2.2094
+N=500 trial=2
+Average number of hops: 2.2036
+N=500 trial=3
+Average number of hops: 2.2110
+N=1000 trial=1
+Average number of hops: 2.4846
+N=1000 trial=2
+Average number of hops: 2.4752
+N=1000 trial=3
+Average number of hops: 2.4716
+N=2000 trial=1
+Average number of hops: 2.6951
+N=2000 trial=2
+Average number of hops: 2.7004
+N=2000 trial=3
+Average number of hops: 2.7056
+N=5000 trial=1
+Average number of hops: 2.9588
+N=5000 trial=2
+Average number of hops: 2.9560
+N=5000 trial=3
+Average number of hops: 2.9599
+N=10000 trial=1
+Average number of hops: 3.2386
+N=10000 trial=2
+Average number of hops: 3.2429
+N=10000 trial=3
+Average number of hops: 3.2454
+N=20000 trial=1
+Average number of hops: 3.4958
+N=20000 trial=2
+Average number of hops: 3.5044
+N=20000 trial=3
+Average number of hops: 3.5029

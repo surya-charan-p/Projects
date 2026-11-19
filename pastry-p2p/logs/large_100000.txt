@@ -1,0 +1,48 @@
+Pastry: numNodes=100000 numRequests=3  (b=4, |L|=16, |M|=16, replicas=3, fault-tolerance=off)
+  ... 10000/100000 joined
+  ... 20000/100000 joined
+  ... 30000/100000 joined
+  ... 40000/100000 joined
+  ... 50000/100000 joined
+  ... 60000/100000 joined
+  ... 70000/100000 joined
+  ... 80000/100000 joined
+  ... 90000/100000 joined
+  ... 100000/100000 joined
+Join phase: 100000 nodes joined in 101.42 s
+Seeded 10000 objects into the store (0 failed)
+Request phase: every peer sends 3 requests, one every 1000 ms...
+
+==================== results ====================
+Requests completed     : 300000 (delivered 300000)
+Request outcomes       : #{ok => 300000}
+Routed to closest node : 300000 / 300000
+Hop histogram          : [{0,4},
+                          {1,194},
+                          {2,4666},
+                          {3,48592},
+                          {4,192343},
+                          {5,53884},
+                          {6,317}]
+log16(numNodes)        : 4.152
+Request phase time     : 27.27 s
+
+Average number of hops: 3.9867
+      129.72 real       246.30 user       596.05 sys
+          6623002624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            25858063  page reclaims
+                  16  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+             2379181  voluntary context switches
+            21685923  involuntary context switches
+       3585579268320  instructions retired
+       3059992990810  cycles elapsed
+         18835646312  peak memory footprint

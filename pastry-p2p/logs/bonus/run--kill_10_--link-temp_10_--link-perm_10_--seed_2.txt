@@ -1,0 +1,15 @@
+Pastry: numNodes=1000 numRequests=10  (b=4, |L|=16, |M|=16, replicas=3, fault-tolerance=on)
+Join phase: 1000 nodes joined in 0.34 s
+Seeded 1000 objects into the store (0 failed)
+Request phase: every peer sends 10 requests, one every 1000 ms...
+
+==================== results ====================
+Requests completed     : 9378 (delivered 9377)
+Request outcomes       : #{ok => 9377,failed => 1}
+Routed to closest node : 9368 / 9377
+Hop histogram          : [{0,12},{1,422},{2,4050},{3,4642},{4,224},{5,27}]
+log16(numNodes)        : 2.491
+Failures injected      : 100 crashed, links #{temp => 100,perm => 100}; 2510 failures detected, 3 requests retried, 0 TTL drops
+Request phase time     : 17.30 s
+
+Average number of hops: 2.5039

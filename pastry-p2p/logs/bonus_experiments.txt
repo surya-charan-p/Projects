@@ -1,0 +1,96 @@
+done: --kill 0 --seed 1
+done: --kill 5 --seed 1
+done: --kill 10 --seed 1
+done: --kill 5 --no-ft --seed 1
+done: --kill 20 --seed 1
+done: --kill 10 --no-ft --seed 1
+done: --kill 20 --no-ft --seed 1
+done: --kill 30 --seed 1
+done: --kill 30 --no-ft --seed 1
+done: --kill 40 --seed 1
+done: --kill 40 --no-ft --seed 1
+done: --kill 30 --replicas 1 --seed 1
+done: --kill 30 --replicas 2 --seed 1
+done: --link-temp 5 --seed 1
+done: --kill 30 --replicas 5 --seed 1
+done: --link-temp 5 --no-ft --seed 1
+done: --link-perm 5 --seed 1
+done: --link-temp 10 --seed 1
+done: --link-temp 10 --no-ft --seed 1
+done: --link-perm 5 --no-ft --seed 1
+done: --link-temp 20 --seed 1
+done: --link-perm 10 --no-ft --seed 1
+done: --link-temp 20 --no-ft --seed 1
+done: --link-perm 10 --seed 1
+done: --link-temp 40 --seed 1
+done: --link-perm 20 --no-ft --seed 1
+done: --link-perm 20 --seed 1
+done: --link-temp 40 --no-ft --seed 1
+done: --link-perm 40 --no-ft --seed 1
+done: --kill 10 --link-temp 10 --link-perm 10 --seed 1
+done: --kill 10 --link-temp 10 --link-perm 10 --no-ft --seed 1
+done: --link-perm 40 --seed 1
+done: --kill 0 --seed 2
+done: --kill 5 --seed 2
+done: --kill 10 --seed 2
+done: --kill 5 --no-ft --seed 2
+done: --kill 10 --no-ft --seed 2
+done: --kill 20 --seed 2
+done: --kill 20 --no-ft --seed 2
+done: --kill 30 --seed 2
+done: --kill 30 --no-ft --seed 2
+done: --kill 40 --seed 2
+done: --kill 30 --replicas 1 --seed 2
+done: --kill 40 --no-ft --seed 2
+done: --kill 30 --replicas 5 --seed 2
+done: --kill 30 --replicas 2 --seed 2
+done: --link-temp 5 --seed 2
+done: --link-temp 5 --no-ft --seed 2
+done: --link-perm 5 --seed 2
+done: --link-temp 10 --seed 2
+done: --link-perm 5 --no-ft --seed 2
+done: --link-temp 10 --no-ft --seed 2
+done: --link-perm 10 --seed 2
+done: --link-perm 10 --no-ft --seed 2
+done: --link-temp 20 --seed 2
+done: --link-temp 20 --no-ft --seed 2
+done: --link-temp 40 --seed 2
+done: --link-perm 20 --no-ft --seed 2
+done: --link-perm 20 --seed 2
+done: --link-temp 40 --no-ft --seed 2
+done: --link-perm 40 --no-ft --seed 2
+done: --kill 10 --link-temp 10 --link-perm 10 --no-ft --seed 2
+done: --link-perm 40 --seed 2
+done: --kill 10 --link-temp 10 --link-perm 10 --seed 2
+done: --kill 0 --seed 3
+done: --kill 5 --seed 3
+done: --kill 5 --no-ft --seed 3
+done: --kill 10 --seed 3
+done: --kill 20 --seed 3
+done: --kill 10 --no-ft --seed 3
+done: --kill 30 --seed 3
+done: --kill 20 --no-ft --seed 3
+done: --kill 40 --seed 3
+done: --kill 30 --no-ft --seed 3
+done: --kill 30 --replicas 1 --seed 3
+done: --kill 40 --no-ft --seed 3
+done: --kill 30 --replicas 5 --seed 3
+done: --kill 30 --replicas 2 --seed 3
+done: --link-temp 5 --seed 3
+done: --link-temp 5 --no-ft --seed 3
+done: --link-temp 10 --seed 3
+done: --link-perm 5 --no-ft --seed 3
+done: --link-temp 10 --no-ft --seed 3
+done: --link-perm 5 --seed 3
+done: --link-perm 10 --seed 3
+done: --link-perm 10 --no-ft --seed 3
+done: --link-temp 20 --seed 3
+done: --link-temp 20 --no-ft --seed 3
+done: --link-temp 40 --seed 3
+done: --link-perm 20 --no-ft --seed 3
+done: --link-perm 20 --seed 3
+done: --link-temp 40 --no-ft --seed 3
+done: --link-perm 40 --no-ft --seed 3
+done: --kill 10 --link-temp 10 --link-perm 10 --seed 3
+done: --kill 10 --link-temp 10 --link-perm 10 --no-ft --seed 3
+done: --link-perm 40 --seed 3

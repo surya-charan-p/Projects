@@ -1,0 +1,15 @@
+Pastry: numNodes=100 numRequests=10  (b=4, |L|=16, |M|=16, replicas=3, fault-tolerance=off)
+Join phase: 100 nodes joined in 0.03 s
+Verify: 100/100 leaf sets match the true ring neighbours
+Seeded 100 objects into the store (0 failed)
+Request phase: every peer sends 10 requests, one every 1000 ms...
+
+==================== results ====================
+Requests completed     : 1000 (delivered 1000)
+Request outcomes       : #{ok => 1000}
+Routed to closest node : 1000 / 1000
+Hop histogram          : [{0,7},{1,296},{2,689},{3,8}]
+log16(numNodes)        : 1.661
+Request phase time     : 10.01 s
+
+Average number of hops: 1.6980
